@@ -1,0 +1,58 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Express App API",
+      "description": "API documentation for the Express app",
+      "version": "1.0.0"
+    },
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Game",
+        "description": "Endpoints related to games"
+      },
+      {
+        "name": "Genre",
+        "description": "Endpoints related to genres"
+      }
+    ],
+    "paths": {
+      "/game": {
+        "get": {
+          "tags": ["Games"],
+          "summary": "Get all games",
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/Game"
+                }
+              }
+            }
+          }
+        }
+    },
+    "definitions": {
+      "Game": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "John Doe"
+          },
+          "email": {
+            "type": "string",
+            "example": "johndoe@example.com"
+          }
+        }
+      }
+    }
+  }
+}

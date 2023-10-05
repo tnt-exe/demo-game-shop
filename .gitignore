@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules
+
+# Environment variables
+.env
+
+# Built output
+build
+
+# IDE files
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Node.js related files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+node_modules/*
+!.bin/
+*.pnp.js
+.pnp.js
+.pnp.js.br
+.pnp.js.gz
